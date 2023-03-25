@@ -103,11 +103,12 @@
         let userScore = 0;
         let computerScore = 0;
         let gameOn = true;
+        const scoreLimit = 5;
 
 
         while (gameOn) {
             game();
-            if (computerScore >= 5 || userScore >= 5) {
+            if (computerScore >= scoreLimit || userScore >= scoreLimit) {
                 gameOn = false;
             }
         }
