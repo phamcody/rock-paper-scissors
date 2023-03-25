@@ -80,12 +80,7 @@
             }
         }
 
-        function game() {
-            let userScore = 0;
-            let computerScore = 0;
-            let userChoice = prompt("What is your choice?");
-            let result = gameResult(getComputerChoice(), userChoice);
-
+        function updateScore(result) {
             if (result === 2) {
                 userScore += 1;
             }
@@ -95,11 +90,21 @@
 
             console.log("User Score: " + userScore);
             console.log("Computer Score: " + computerScore);
+        }
+
+        function game() {
+            let userChoice = prompt("What is your choice?");
+            let result = gameResult(getComputerChoice(), userChoice);
+            updateScore(result);
+
     
         }
 
+        let userScore = 0;
+        let computerScore = 0;
 
         game();
+        
 
         // user choice test for gameResult()
         // Compare users choice with computers choice
