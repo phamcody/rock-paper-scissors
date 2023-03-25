@@ -28,8 +28,56 @@
         }
 
 
+        // Function that receives computer choice and user choice, then calculates result of one game
+        function gameResult(computerChoice, userChoice) {
+            computerChoice = computerChoice.toLowerCase();
+            userChoice = userChoice.toLowerCase();
+            console.log("Computer selected " + computerChoice);
+            console.log("User selected " + userChoice);
 
-        // Get users choice
+
+            if (computerChoice === "rock") {
+                if (userChoice === "paper") {
+                    return "You win! Your paper wraps around the rock and suffocates it!";
+                }
+                else if (userChoice === "scissors") {
+                    return "You lose! Their rock slams against your scissors and crushes it.";
+                }
+                else {
+                    return "Draw! You both come out unvictorious";
+                }
+                }
+            else if (computerChoice === "paper") {
+                if (userChoice === "rock") {
+                    return "You lose! Their paper suffocated your rock";
+                }
+                else if (userChoice === "scissors") {
+                    return "You win! Your scissors slashed their paper in half";
+                }
+                else {
+                    return "Draw! You both come out unvictorious";
+                }
+            }
+            else {
+                if (userChoice === "rock") {
+                    return "You win! Your rock crushed their scissor into pieces";
+                }
+                else if (userChoice === "paper") {
+                    return "You lose! Their scissors slashed your paper";
+                }
+                else {
+                    return "Draw! You both come out unvictorious";
+                }
+            }
+        }
+
+
+        // user choice test for gameResult()
+        let userChoice = "sCissors";
+
+
+
+        console.log(game(getComputerChoice(), userChoice));
 
         // Compare users choice with computers choice
         // if users choice is rock and computers choice is scissors
