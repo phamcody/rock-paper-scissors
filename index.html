@@ -80,6 +80,8 @@
             }
         }
 
+
+        // Updates score and adds onto userScore and computerScore
         function updateScore(result) {
             if (result === 2) {
                 userScore += 1;
@@ -92,6 +94,8 @@
             console.log("Computer Score: " + computerScore);
         }
 
+
+        // function to play the game
         function game() {
             let userChoice = prompt("What is your choice?");
             let result = gameResult(getComputerChoice(), userChoice);
@@ -105,7 +109,7 @@
         let gameOn = true;
         const scoreLimit = 5;
 
-
+        // loop that will keep on going until user or computer scores the scoreLimit points
         while (gameOn) {
             game();
             if (computerScore >= scoreLimit || userScore >= scoreLimit) {
@@ -119,12 +123,6 @@
             console.log("You were defeated by the almighty computer.");
         }
         
-
-        // user choice test for gameResult()
-        // Compare users choice with computers choice
-        // if users choice is rock and computers choice is scissors
-        // user gets 1 point
-
     </script>
 
 </body>
