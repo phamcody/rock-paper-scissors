@@ -38,47 +38,58 @@
 
             if (computerChoice === "rock") {
                 if (userChoice === "paper") {
-                    return "You win! Your paper wraps around the rock and suffocates it!";
+                    console.log("You win! Your paper wraps around the rock and suffocates it!");
+                    return 2;
                 }
                 else if (userChoice === "scissors") {
-                    return "You lose! Their rock slams against your scissors and crushes it.";
+                    console.log("You lose! Their rock slams against your scissors and crushes it.");
+                    return 1;
                 }
                 else {
-                    return "Draw! You both come out unvictorious";
+                    console.log("Draw! You both come out unvictorious");
+                    return 0;
                 }
                 }
             else if (computerChoice === "paper") {
                 if (userChoice === "rock") {
-                    return "You lose! Their paper suffocated your rock";
+                    console.log("You lose! Their paper suffocated your rock");
+                    return 1;
                 }
                 else if (userChoice === "scissors") {
-                    return "You win! Your scissors slashed their paper in half";
+                    console.log("You win! Your scissors slashed their paper in half");
+                    return 2;
                 }
                 else {
-                    return "Draw! You both come out unvictorious";
+                    console.log("Draw! You both come out unvictorious");
+                    return 0;
                 }
             }
             else {
                 if (userChoice === "rock") {
-                    return "You win! Your rock crushed their scissor into pieces";
+                    console.log("You win! Your rock crushed their scissor into pieces");
+                    return 2;
                 }
                 else if (userChoice === "paper") {
-                    return "You lose! Their scissors slashed your paper";
+                    console.log("You lose! Their scissors slashed your paper");
+                    return 1;
                 }
                 else {
-                    return "Draw! You both come out unvictorious";
+                    console.log("Draw! You both come out unvictorious");
+                    return 0;
                 }
             }
         }
 
+        function game() {
+            let userChoice = prompt("What is your choice?");
+            console.log(gameResult(getComputerChoice(), userChoice));
+    
+        }
+
+
+        game();
 
         // user choice test for gameResult()
-        let userChoice = "sCissors";
-
-
-
-        console.log(game(getComputerChoice(), userChoice));
-
         // Compare users choice with computers choice
         // if users choice is rock and computers choice is scissors
         // user gets 1 point
