@@ -102,8 +102,21 @@
 
         let userScore = 0;
         let computerScore = 0;
+        let gameOn = true;
 
-        game();
+
+        while (gameOn) {
+            game();
+            if (computerScore >= 5 || userScore >= 5) {
+                gameOn = false;
+            }
+        }
+        if (userScore > computerScore) {
+            console.log("You defeated the computer!");
+        }
+        else {
+            console.log("You were defeated by the almighty computer.");
+        }
         
 
         // user choice test for gameResult()
