@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-container,
+#scoreboard-container,
+#content,
+#footer {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* TOP CONTAINER */
+#top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F5EB;
+    padding: 40px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+/* SCOREBOARD CONTAINER */
+#scoreboard-container {
+    background-color: #E4DCCF;
+    display: flex;
+    padding: 88px 0;
+    flex-direction: column;
+    flex-basis: 302px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 75px;
+}
+
+#player-choice,
+#computer-choice {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transition: all .09s;
+    border-style: 0;
+    border: 0;
+}
+
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color:black;
+    
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #002b5b;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* CONTENT CONTAINER */
+#content{
+    background-color: #EA5455;
+    padding: 80.5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.selections {
+    display: flex;
+    gap: 50px;;
+}
+
+.button {
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color:#002b5b;
+    border-color: #002b5b;
+    color: #E5E6E4;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER CONTAINER */
+#footer {
+    display: flex;
+    justify-content: center;
+    background: #002b5b;
+    color: #E5E6E4;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+}
+
+/* ANIMATION */
+
+.pop-out {
+    transform: scale(1.1);
+    border-color: #EA5455;
+    box-shadow: 0 0 10px #EA5455;
+}
+
+.replay-button {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(63, 153, 255);
+    padding: 20px 0;
+    border-radius: 20px;
+    border-color: #002b5b;
+    width: 300px;
+}
+
+.gameOverMessage {
+    align-items: center;
+    gap: 20px;
+}
