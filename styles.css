@@ -21,6 +21,7 @@ body {
     align-items: center;
     background-color: #F9F5EB;
     padding: 40px;
+    flex-basis: 98px;
 }
 
 .title {
