@@ -7,11 +7,37 @@
     <title>Rock Paper Scissors</title>
     <script src="scripts.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="top-container"></div>
-    <div id="scoreboard"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
+
+    <div id="top-container">
+        <div class="title">ROCK PAPER SCISSORS</div>
+    </div>
+
+    <div id="scoreboard-container">
+        <div class="result">
+            <img id="player-choice">
+            <img id="computer-choice">
+        </div>
+
+            <div class="score">
+                <div id="human" class="scores">HUMANS: 0</div>
+                <div id="computer" class="scores">AI: 0</div>
+            </div>
+
+    </div>
+
+    <div id="content">
+        <div class="selections">
+            <button id="rock" class="button">ROCK</button>
+            <button id="paper" class="button">PAPER</button>
+            <button id="scissors" class="button">SCISSORS</button>
+        </div>
+    </div>
+    
+    <div id="footer">created by phamcody @ github.com</div>
 </body>
 </html>
